@@ -1,0 +1,176 @@
+                                        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+                                        * {
+                                            margin: 0;
+                                            padding: 0;
+                                            box-sizing: border-box;
+                                        }
+                                        
+                                        body {
+                                            width: 100vw;
+                                            height: 100vh;
+                                            background-color: white;
+                                            font-family: "poppines" sans-serif;
+                                        }
+                                        
+                                        h1 {
+                                            text-align: center;
+                                            padding-top: 50px;
+                                            font-size: 3rem;
+                                            color: rgb(83, 80, 80);
+                                            text-shadow: 0px 2px rgb(158, 126, 126);
+                                            animation: heading 1000ms ease-in;
+                                            animation-duration: 500ms;
+                                        }
+                                        
+                                        h2 {
+                                            text-align: center;
+                                            padding: 20px;
+                                            font-size: 3rem;
+                                            color: rgb(145, 104, 104);
+                                            animation: head 1500ms;
+                                            animation-duration: 1300ms;
+                                            animation-timing-function: ease-in;
+                                            animation-delay: 1000ms;
+                                            animation-fill-mode: forwards;
+                                            transform: scale(0);
+                                        }
+                                        
+                                        img {
+                                            animation: image 500ms;
+                                            animation-duration: 2300ms;
+                                            animation-timing-function: ease-in;
+                                            animation-delay: 2000ms;
+                                            animation-fill-mode: forwards;
+                                            transform: scale(0);
+                                        }
+                                        
+                                        p {
+                                            font-size: 2rem;
+                                            text-align: center;
+                                            padding: 30px;
+                                            word-wrap: break-word;
+                                            animation: page 2500ms;
+                                            animation-duration: 1000ms;
+                                            animation-timing-function: ease-in;
+                                            animation-delay: 1500ms;
+                                            animation-fill-mode: forwards;
+                                            transform: scale(0);
+                                        }
+                                        
+                                        .row {
+                                            display: flex;
+                                            padding: 100px;
+                                        }
+                                        
+                                        .row .reverse {
+                                            margin-left: 100px;
+                                        }
+                                        
+                                        .card-body {
+                                            padding-top: 100px;
+                                            max-width: 1000px;
+                                        }
+                                        
+                                        .col-pa {
+                                            margin-left: 80px;
+                                        }
+                                        
+                                        [class*="col-"] {
+                                            width: 100%;
+                                        }
+                                        
+                                        @keyframes heading {
+                                            0% {
+                                                transform: translateY(-100%);
+                                            }
+                                            70% {
+                                                transform: scale(1.1);
+                                            }
+                                            100% {
+                                                transform: translateY(1);
+                                            }
+                                        }
+                                        
+                                        @keyframes head {
+                                            0% {
+                                                transform: translate(-100%);
+                                            }
+                                            70% {
+                                                transform: scale(1.1);
+                                            }
+                                            100% {
+                                                transform: translate(0);
+                                            }
+                                        }
+                                        
+                                        @keyframes page {
+                                            0% {
+                                                transform: translate(-100%);
+                                            }
+                                            80% {
+                                                transform: scale(1.1);
+                                            }
+                                            100% {
+                                                transform: translate(0);
+                                            }
+                                        }
+                                        
+                                        @keyframes image {
+                                            0% {
+                                                transform: translate(-100%);
+                                            }
+                                            70% {
+                                                transform: scale(1.2);
+                                            }
+                                            100% {
+                                                transform: translate(0);
+                                            }
+                                        }
+                                        
+                                        @media screen and (max-width: 1000px) {
+                                            h2 {
+                                                margin-left: 10rem;
+                                                width: 600px;
+                                            }
+                                            h1 {
+                                                margin-left: 10rem;
+                                                width: 600px;
+                                            }
+                                            .row {
+                                                display: table;
+                                                padding: 50px;
+                                            }
+                                            .reverse {
+                                                display: table;
+                                            }
+                                            img {
+                                                margin-left: 100px;
+                                            }
+                                            .reverse .col-2 {
+                                                display: table-header-group;
+                                            }
+                                        }
+                                        
+                                        @media screen and (max-width: 360px) {
+                                            h2 {
+                                                margin-left: 10rem;
+                                                width: 600px;
+                                            }
+                                            h1 {
+                                                margin-left: 10rem;
+                                                width: 600px;
+                                            }
+                                            .row {
+                                                display: table;
+                                                padding: 30px;
+                                            }
+                                            .reverse {
+                                                display: table;
+                                            }
+                                            img {
+                                                margin-left: 100px;
+                                            }
+                                            .reverse .col-2 {
+                                                display: table-header-group;
+                                            }
+                                        }
